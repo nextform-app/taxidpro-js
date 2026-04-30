@@ -1,5 +1,5 @@
 {
-  "name": "@balancer-team/taxidpro",
+  "name": "@nextform/taxidpro",
   "version": "1.0.8",
   "description": "Tax ID Pro JavaScript Client",
   "main": "dist/index.js",
@@ -7,7 +7,7 @@
     "build": "tsc",
     "test": "node --require ts-node/register --test test/*.test.ts"
   },
-  "repository": "github:balancer-team/taxidpro-js",
+  "repository": "github:nextform/taxidpro-js",
   "homepage": "https://taxid.pro",
   "keywords": [
     "tax",

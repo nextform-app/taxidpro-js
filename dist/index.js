@@ -5,13 +5,10 @@ const constants_1 = require("./constants");
 class TaxIDPro {
     apiKey;
     constructor({ apiKey }) {
-        if (typeof apiKey !== 'string') {
-            throw new Error('apiKey must be a string');
-        }
         this.apiKey = apiKey;
     }
     async validate({ country, tin, type = 'any' }) {
-        const res = await fetch(`${constants_1.BASE_URL}${constants_1.VALIDATE_ENDPOINT}?country=${country}&tin=${tin}&type=${type}`, {
+        const res = await fetch(`${constants_1.BASE_URL}/validate?country=${country}&tin=${tin}&type=${type}`, {
             headers: { Authorization: `Bearer ${this.apiKey}` },
         });
         if (!res.ok)
@@ -22,7 +19,7 @@ class TaxIDPro {
     async lookup({ country, tin, type = 'vat' }) {
         if (type !== 'vat')
             throw new Error('lookup type must be vat');
-        const res = await fetch(`${constants_1.BASE_URL}${constants_1.LOOKUP_ENDPOINT}?country=${country}&tin=${tin}&type=${type}`, {
+        const res = await fetch(`${constants_1.BASE_URL}/lookup?country=${country}&tin=${tin}&type=${type}`, {
             headers: { Authorization: `Bearer ${this.apiKey}` },
         });
         if (!res.ok)
