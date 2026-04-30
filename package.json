@@ -1,6 +1,6 @@
 {
   "name": "@nextform/taxidpro",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Tax ID Pro JavaScript Client",
   "main": "dist/index.js",
   "scripts": {
