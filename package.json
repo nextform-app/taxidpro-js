@@ -7,7 +7,7 @@
     "build": "tsc",
     "test": "node --require ts-node/register --test test/*.test.ts"
   },
-  "repository": "github:nextform/taxidpro-js",
+  "repository": "github:nextform-app/taxidpro-js",
   "homepage": "https://taxid.pro",
   "keywords": [
     "tax",
