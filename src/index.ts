@@ -1,6 +1,6 @@
 import { BASE_URL } from './constants'
 
-type TaxIDProOptions = {
+type TaxidproOptions = {
   apiKey: string
 }
 
@@ -26,10 +26,10 @@ type LookupResponse = ValidateResponse & {
   }
 }
 
-export class TaxIDPro {
+export class Taxidpro {
   readonly apiKey: string
 
-  constructor({ apiKey }: TaxIDProOptions) {
+  constructor({ apiKey }: TaxidproOptions) {
     this.apiKey = apiKey
   }
 
@@ -52,3 +52,5 @@ export class TaxIDPro {
     return data
   }
 }
+
+export { Taxidpro as TaxIDPro }

@@ -1,4 +1,4 @@
-type TaxIDProOptions = {
+type TaxidproOptions = {
     apiKey: string;
 };
 type ValidateOptions = {
@@ -20,10 +20,10 @@ type LookupResponse = ValidateResponse & {
         address: string;
     };
 };
-export declare class TaxIDPro {
+export declare class Taxidpro {
     readonly apiKey: string;
-    constructor({ apiKey }: TaxIDProOptions);
+    constructor({ apiKey }: TaxidproOptions);
     validate({ country, tin, type }: ValidateOptions): Promise<ValidateResponse>;
     lookup({ country, tin, type }: ValidateOptions): Promise<LookupResponse>;
 }
-export {};
+export { Taxidpro as TaxIDPro };

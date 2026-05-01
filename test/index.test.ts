@@ -1,9 +1,13 @@
 import 'dotenv/config'
 import test from 'node:test'
 import assert from 'node:assert'
-import { TaxIDPro } from '../src'
+import { Taxidpro, TaxIDPro } from '../src'
 
-const taxidpro = new TaxIDPro({ apiKey: process.env.API_KEY || '' })
+const taxidpro = new Taxidpro({ apiKey: process.env.API_KEY || '' })
+
+test('TaxIDPro remains an alias of Taxidpro', () => {
+  assert.strictEqual(TaxIDPro, Taxidpro)
+})
 
 test('validate', async () => {
   const res = await taxidpro.validate({ country: 'au', tin: '92873837267', type: 'entity' })

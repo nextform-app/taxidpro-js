@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TaxIDPro = void 0;
+exports.TaxIDPro = exports.Taxidpro = void 0;
 const constants_1 = require("./constants");
-class TaxIDPro {
+class Taxidpro {
     apiKey;
     constructor({ apiKey }) {
         this.apiKey = apiKey;
@@ -28,4 +28,5 @@ class TaxIDPro {
         return data;
     }
 }
-exports.TaxIDPro = TaxIDPro;
+exports.Taxidpro = Taxidpro;
+exports.TaxIDPro = Taxidpro;
