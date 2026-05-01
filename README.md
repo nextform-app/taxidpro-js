@@ -7,7 +7,7 @@ Lookup is available for VAT Numbers from the European Union (EU), plus the Unite
 ### Install
 
 ```bash
-npm i @balancer-team/taxidpro
+npm i @nextform/taxidpro
 ```
 
 ### Usage
@@ -15,7 +15,7 @@ npm i @balancer-team/taxidpro
 Provide your API key to the `Taxidpro` constructor. You can obtain an API key by signing up at [Tax ID Pro](https://taxid.pro/).
 
 ```ts
-import { Taxidpro } from '@balancer-team/taxidpro'
+import { Taxidpro } from '@nextform/taxidpro'
 
 const taxidpro = new Taxidpro({ apiKey: 'YOUR_API_KEY' })
 
